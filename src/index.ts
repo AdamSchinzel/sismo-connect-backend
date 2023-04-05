@@ -1,7 +1,7 @@
-import express from "express";
-import cors from "cors";
 global.atob = require("atob");
 
+import express from "express";
+import cors from "cors";
 import {
   ZkConnect,
   ZkConnectServerConfig,
@@ -29,7 +29,7 @@ app.post("/verify", async (req, res) => {
 
   const claimRequest = {
   groupId,
-};
+  };
 
   try {
     const { verifiedAuths } = await zkConnect.verify(zkConnectResponse, {
@@ -38,12 +38,13 @@ app.post("/verify", async (req, res) => {
     });
 
     if (verifiedAuths.length > 0) {
-        res.status(200)
+      res.status(200)
     }
+
   } catch (e: any) {
     res.status(400);
   }
 });
 
 
-app.listen(process.env.PORT ?? 8080);
+app.listen(8080);
