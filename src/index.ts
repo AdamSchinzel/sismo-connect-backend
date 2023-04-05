@@ -38,11 +38,11 @@ app.post("/verify", async (req, res) => {
     });
 
     if (verifiedAuths.length > 0) {
-      res.status(200)
+      res.status(200).send({ verified: true });
     }
 
   } catch (e: any) {
-    res.status(400);
+    res.status(400).send({ verified: false });
   }
 });
 
