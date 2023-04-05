@@ -28,7 +28,7 @@ app.post("/verify", async (req, res) => {
   const { groupId, zkConnectResponse } = req.body;
 
   const claimRequest = {
-  groupId,
+    groupId,
   };
 
   try {
