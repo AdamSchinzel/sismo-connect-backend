@@ -1,5 +1,5 @@
 {
-  "name": "zk-connect-backend",
+  "name": "sismo-connect-backend",
   "version": "0.1.0",
   "scripts": {
     "start": "nodemon --watch src -e js,ts,json --exec \"ts-node src/index.ts\"",
