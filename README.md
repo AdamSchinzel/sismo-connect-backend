@@ -1,6 +1,6 @@
 # sismoConnect backend
 
-This is an example how to use sismoConnect to verify proofs on backend written in Node.js.
+This is an example how to use Sismo Connect to verify proofs on backend written in Node.js.
 
 ## Documentation
 
