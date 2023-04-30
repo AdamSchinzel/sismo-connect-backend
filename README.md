@@ -1,4 +1,4 @@
-# Sismo Connect backend
+# Sismo Connect Backend
 
 This is an example how to use Sismo Connect to verify proofs on backend written in Node.js.
 
